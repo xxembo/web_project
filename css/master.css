@@ -1,0 +1,323 @@
+/* Resets */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background: #f1f1f1;
+    color: #333;
+}
+
+img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+p {
+    text-align: justify;
+    line-height: 1.3;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    padding: 14px 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Header */
+header {
+    position: relative;
+    background-color: #f4bd01;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.reverseBtn {
+    background-color: #333;
+    color: #f4bd01;
+    transition: ease-out 0.5s;
+}
+
+.reverseBtn:hover {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.minHeader {
+    padding: 5px 0px 5px 10px;
+    display: none;
+}
+
+/* Navigation */
+nav ul {
+    display: flex;
+
+    justify-content: center;
+}
+
+nav ul li a {
+    display: block;
+
+
+    text-align: center;
+    transition: ease-out 0.3s;
+}
+
+a {
+    text-align: center;
+    display: flex;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    padding-left: 30px;
+    color: whitesmoke;
+}
+
+/* Flexbox */
+.flex-container {
+    display: flex;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.max-width {
+    max-width: 1920px
+}
+
+/* Ana İçerik */
+#mainContent {
+    flex: 8;
+    padding: 10px;
+}
+#mainContent2 {
+    flex: 2;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Yan İçerik */
+#sideContent {
+    flex: 8;
+    padding: 10px;
+}
+#sideContent2 {
+    flex: 2;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Card'lar */
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 4px;
+}
+.card2 {
+    margin-bottom: 30px;
+    -webkit-transition: all .5s ease 0s;
+    transition: all .5s ease 0s;
+    padding: 37px 30px 45px;
+    margin-top: 20px;
+    box-shadow: 0 10px 25px 0 rgb(50 65 141 / 12%);
+    overflow: hidden;
+    position: relative;
+    text-align: left;
+    background: #fff;
+}
+.card3{
+    margin-bottom: 30px;
+    padding: 37px 30px 28px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+.card h5 {
+    color: #aaa;
+    font-style: italic;
+}
+
+/* Popüler yazılar */
+.populerText {
+    margin-top: 3px;
+    transition: ease-out 0.3s;
+}
+
+.populerText:hover {
+    cursor: pointer;
+    transform: rotate(10deg);
+}
+
+/* Inputs */
+.btn {
+    background-color: #f4bd01;
+    color: #333;
+    transition: ease-out 0.5s;
+}
+
+.btn:hover {
+    background-color: #333;
+    color: #f4bd01;
+}
+
+/* Image */
+.cardImage {
+    border-radius: 4px;
+}
+
+/* Sosyal İçerikler */
+#social {
+    display: flex;
+}
+
+#social li {
+    padding: 10px;
+}
+
+#social li a {
+    font-size: 2rem;
+    color: #f4bd01;
+    transition: ease-out 0.5s;
+}
+
+#social li a:hover {
+    color: #333;
+}
+
+/* Footer*/
+footer {
+    padding: 20px 0;
+    color: white;
+}
+
+footer section {
+    flex: 1;
+    padding: 0 5px;
+}
+
+.footerList li {
+    padding: 0 0 5px;
+}
+
+.footerList li a {
+    color: white;
+    transition: ease-out 0.3s;
+}
+
+.footerList li a:hover {
+    padding-left: 10px;
+}
+
+.footerP {
+    width: 50%;
+    text-align: left;
+}
+
+/* Medya Sorguları */
+@media screen and (max-width: 768px) {
+
+    .flex-container,
+    nav ul {
+        flex-direction: column;
+    }
+
+    .maxHeader {
+        display: none;
+    }
+
+    .minHeader {
+        display: block;
+    }
+}
+
+.logo {
+    width: 10%
+}
+.logo2 {
+    width: 70%
+}
+.img2 {
+    width: 10%;
+    margin: auto;
+    float: left;
+    padding: 0 10px 10px 0;
+}
+.img3 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 5%;
+}
+.img4 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%;
+}
+
+
+.profil {
+    font-size: 17px;
+    text-align: left;
+}
+
+.text {
+    overflow: hidden;
+    padding-top: 5px;
+    float: left;
+}
+.text2{
+    text-align: center;
+}
+.text3{
+    color: white;
+}
+.checked {
+    color: blue;
+  }
+.dis{
+    text-align: center;
+    margin-right: 600px;
+    margin-left: 200px;
+}
+.text4{
+    text-align: center;
+}
+.dis2{
+    text-align: center;
+    margin-right: 300px;
+    margin-left: 100px;
+}
+.none{
+    text-decoration: none;
+    list-style-type:none;
+    color: white;
+    
+}
+.checked2{
+    color: white;
+}
+
